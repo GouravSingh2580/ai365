@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AI365</title>
+  <script type="text/javascript">
+    async function search() {
+      document.getElementById('demo').innerHTML = 'Loading...';
+      const input = document.getElementById('search-input').value;
+      const response = await fetch(`/search?q=${input}`);
+      const text = await response.text();
+      document.getElementById('demo').innerHTML = text;
+    }
+  </script>
+</head>
+<body>
+  <h1>AI365</h1>
+
+  <label for="search-input">Search:</label>
+  <input type="text" id="search-input" name="search-input">
+
+  <button onclick="search()">Go</button>
+
+  <p>Result:</p>
+  <p id="demo"></p>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+  <footer>
+    <!-- place this footer at the bottom of website -->
+    <p>© 2023 AI365. All rights reserved.</p>
+    <p>Powered by <a href="https://www.linkedin.com/in/gouravsingh2580">Gourav Singh</a></p>
+  </footer>
+</body>
+</html>
